@@ -197,7 +197,7 @@ Double-click `start_backend.bat` and `start_frontend.bat` in two separate window
 
 **Solo — Raksha S**
 B.Tech Data Science & AI, IIIT Dharwad (Batch 2025–29)
-GitHub: [@Dark-fire777](https://github.com/Dark-fire777)
+
 
 ---
 
