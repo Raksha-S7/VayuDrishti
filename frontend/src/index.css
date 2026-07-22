@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;600&display=swap');
+
+body {
+  background-color: #0A0E1A;
+  color: #e2e8f0;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+/* Breathing pulse animation */
+@keyframes breathe-good { 0%, 100% { transform: scale(1); opacity: 0.6; } 50% { transform: scale(1.12); opacity: 1; } }
+@keyframes breathe-moderate { 0%, 100% { transform: scale(1); opacity: 0.6; } 50% { transform: scale(1.15); opacity: 1; } }
+@keyframes breathe-poor { 0%, 100% { transform: scale(1); opacity: 0.7; } 50% { transform: scale(1.2); opacity: 1; } }
+@keyframes breathe-severe { 0%, 100% { transform: scale(1); opacity: 0.8; } 50% { transform: scale(1.25); opacity: 1; } }
+
+.pulse-good { animation: breathe-good 3s ease-in-out infinite; }
+.pulse-moderate { animation: breathe-moderate 2s ease-in-out infinite; }
+.pulse-poor { animation: breathe-poor 1.5s ease-in-out infinite; }
+.pulse-severe { animation: breathe-severe 1s ease-in-out infinite; }
+
+/* Leaflet map dark theme fix */
+.leaflet-container { background: #0A0E1A !important; }
+.leaflet-tile-pane { filter: brightness(0.6) saturate(0.5); }
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0F1628; }
+::-webkit-scrollbar-thumb { background: #1e3a5f; border-radius: 3px; }
